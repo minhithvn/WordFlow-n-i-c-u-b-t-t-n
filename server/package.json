@@ -1,0 +1,23 @@
+{
+  "name": "wordflow-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "WordFlow AI proxy — keeps the LLM API key off the phone",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/node-server.ts",
+    "start": "tsx src/node-server.ts",
+    "test": "tsx --test ../app/shared/test/*.test.ts test/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "tsx": "^4.23.15"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2"
+  }
+}
